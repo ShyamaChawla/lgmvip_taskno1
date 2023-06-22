@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Century Gothic;
+}
+
+body{
+    background-image: url('BEACHH.jpg');
+    background-size: cover;
+
+}
+
+header{
+    height: 50px;
+    backdrop-filter: blur(8px);
+    color: #8ef3ff;
+    display: flex;
+}
+
+header img{
+    width: 48px;
+    HEIGHT: 40PX;
+    MARGIN: 8PX 0PX 0PX 16PX;
+}
+
+header h1{
+    MARGIN-TOP: 8PX;
+}
+
+.container{
+    background: linear-gradient(136deg, rgb(11 159 183),rgb(255 255 255));
+    border-radius: 8px;
+    box-shadow: 2px 2px 20px 1px;
+    min-height: 82px;
+    margin: 65px 400px 10px;
+}
+
+.input-box input[type='text']{
+    width: 503px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-weight:600;
+    font-size:15px;
+    padding: 6px 0px 6px 20px;
+    margin: 25px -77px 15px 30px;
+
+}
+
+.input-box button{
+    height: 38px;
+    width: 73px;
+    font-size: 19PX;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(104, 201, 233);
+}
+
+.task-items{
+    margin: 4px 36px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.task-items ul{
+    list-style: none;
+}
+
+.task-items ul li{
+    font-size: large;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li{
+    list-style:none;
+    font-size:17px;
+    padding:12px 8px 12px 50px;
+    user-select:none;
+    cursor:pointer;
+    position:relative;
+    
+}
+
+ul li::before{
+    content:'';
+    position:absolute;
+    height:26px;
+    width:26px;
+    border-radius:50%;
+    background-image:url(unchecked.png);
+    background-size:cover;
+    background-position:center;
+    top:10px;
+    left:8px;
+}
+
+li.ticked{
+    text-decoration: line-through;
+    color: black;
+}
+
+ul li.ticked::before{
+    background-image:url(tick2.png);
+    color:black;
+    height:26px;
+    width:26px;
+}
+
+span{
+    position: absolute;
+    left: 457px;
+    color: #00b9d7;
+}
+
+
